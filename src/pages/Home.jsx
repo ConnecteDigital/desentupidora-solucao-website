@@ -216,7 +216,7 @@ const Home = () => {
                     ))}
                   </ul>
                   <a
-                    href={`https://wa.me/5571997217825?text=Olá! Gostaria de solicitar o serviço de ${service.title}. Quero o desconto de 20%!`}
+                    href={`https://wa.me/5571996904202?text=Olá! Gostaria de solicitar o serviço de ${service.title}. Quero o desconto de 20%!`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg flex items-center justify-center space-x-2 transition-colors"
