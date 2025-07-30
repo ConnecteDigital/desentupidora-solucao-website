@@ -82,7 +82,7 @@ const Atendimento24h = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://wa.me/5571997217825?text=Olá! Preciso de atendimento emergencial 24h. Quero o desconto de 20%!"
+                href="https://api.whatsapp.com/send?phone=5571996904202&text=Olá! Preciso de atendimento emergencial 24h. Quero o desconto de 20%!"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
@@ -91,7 +91,7 @@ const Atendimento24h = () => {
                 <span>WhatsApp Emergencial - 20% Desconto</span>
               </a>
               <a
-                href="tel:71997217825"
+                href="tel:71996904202"
                 className="bg-white hover:bg-gray-100 text-orange-600 px-8 py-4 rounded-lg text-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
               >
                 <Phone className="w-5 h-5" />
@@ -247,7 +247,7 @@ const Atendimento24h = () => {
                 <h3 className="text-xl font-semibold mb-2">Ligação Direta</h3>
                 <p className="text-orange-100 mb-3">Fale diretamente com nossa central</p>
                 <a
-                  href="tel:71997217825"
+                  href="tel:71996904202"
                   className="text-white font-semibold text-lg hover:text-orange-200 transition-colors"
                 >
                   (71) 9 9721-7825
@@ -259,7 +259,7 @@ const Atendimento24h = () => {
                 <h3 className="text-xl font-semibold mb-2">WhatsApp</h3>
                 <p className="text-orange-100 mb-3">Ganhe 20% de desconto</p>
                 <a
-                  href="https://wa.me/5571997217825?text=Olá! Preciso de atendimento emergencial 24h. Quero o desconto de 20%!"
+                  href="https://api.whatsapp.com/send?phone=5571996904202&text=Olá! Preciso de atendimento emergencial 24h. Quero o desconto de 20%!"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-semibold inline-flex items-center space-x-2 transition-colors"

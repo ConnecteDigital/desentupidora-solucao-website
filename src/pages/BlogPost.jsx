@@ -303,7 +303,7 @@ const BlogPost = () => {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a
-                      href={`https://wa.me/5571997217825?text=Olá! Li o artigo "${post.title}" e preciso de ajuda profissional.`}
+                      href={`https://api.whatsapp.com/send?phone=5571996904202&text=Olá! Li o artigo "${d.title}" e preciso de ajuda profissional.`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
@@ -312,7 +312,7 @@ const BlogPost = () => {
                       <span>Fale Conosco via WhatsApp</span>
                     </a>
                     <a
-                      href="tel:71997217825"
+                      href="tel:71996904202"
                       className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
                     >
                       <Phone className="w-4 h-4" />

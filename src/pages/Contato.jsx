@@ -7,17 +7,17 @@ const Contato = () => {
     {
       icon: <Phone className="w-8 h-8 text-blue-600" />,
       title: "Telefone",
-      info: "(71) 9 9721-7825",
+      info: "(71) 9 9690-4202",
       description: "Ligue diretamente para atendimento imediato",
-      action: "tel:71997217825",
+      action: "tel:71996904202",
       buttonText: "Ligar Agora"
     },
     {
       icon: <MessageCircle className="w-8 h-8 text-green-600" />,
       title: "WhatsApp",
-      info: "(71) 9 9721-7825",
+      info: "(71) 9 9690-4202",
       description: "Converse conosco pelo WhatsApp",
-      action: "https://wa.me/5571997217825?text=Olá! Gostaria de solicitar um orçamento.",
+      action: "https://api.whatsapp.com/send?phone=5571996904202&text=Olá! Gostaria de solicitar um orçamento.",
       buttonText: "Abrir WhatsApp"
     },
     {

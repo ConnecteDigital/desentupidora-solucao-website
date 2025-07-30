@@ -48,14 +48,14 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Entre em Contato</h4>
             <div className="space-y-3">
               <a
-                href="tel:71997217825"
+                href="tel:71996904202"
                 className="flex items-center space-x-2 text-blue-200 hover:text-white transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                <span>(71) 9 9721-7825</span>
+                <span>(71) 9 9690-4202</span>
               </a>
               <a
-                href="https://wa.me/5571997217825?text=Olá! Vim através do site da Desentupidora Solução e preciso de atendimento."
+                href="https://api.whatsapp.com/send?phone=5571996904202&text=Olá! Vim através do site da Desentupidora Solução e preciso de atendimento."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-blue-200 hover:text-white transition-colors"
