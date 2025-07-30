@@ -59,15 +59,15 @@ const Header = () => {
           {/* Botões de Contato */}
           <div className="flex items-center space-x-2">
             <a
-              href="tel:71997217825"
+              href="tel:71996904202"
               className="hidden sm:flex items-center space-x-1 bg-green-600 hover:bg-green-700 px-3 py-2 rounded text-sm font-medium transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span className="hidden md:block">(71) 9 9721-7825</span>
+              <span className="hidden md:block">(71) 9 9690-4202</span>
             </a>
             
             <a
-              href="https://wa.me/5571997217825"
+              href="https://wa.me/5571996904202"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-1 bg-green-600 hover:bg-green-700 px-3 py-2 rounded text-sm font-medium transition-colors"

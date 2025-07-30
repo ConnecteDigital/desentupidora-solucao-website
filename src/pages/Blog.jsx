@@ -159,7 +159,7 @@ const Blog = () => {
               Cadastre-se para receber dicas de prevenção e manutenção diretamente no seu WhatsApp
             </p>
             <a
-              href="https://wa.me/5571997217825?text=Olá! Gostaria de receber dicas de prevenção e manutenção no WhatsApp."
+              href="https://wa.me/5571996904202?text=Olá! Gostaria de receber dicas de prevenção e manutenção no WhatsApp."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg text-lg font-semibold inline-flex items-center space-x-2 transition-colors"

@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 // Importando as imagens
 import desentupimentoPiaImg from '../assets/images/desentupimento-pia.webp';
 import desentupimentoVasoImg from '../assets/images/desentupimento-vaso.jpg';
-import limpaFossaImg from '../assets/images/limpa-fossa.jpg';
+import limpaFossaImg from '../assets/images/limpa-fossa-new.png';
 import hidrojateamentoImg from "../assets/images/hidrojateamento-new.jpg";
 import limpezaCaixaGorduraImg from '../assets/images/limpeza-caixa-gordura.jpg';
 import desentupimentoEsgotoImg from '../assets/images/desentupimento-esgoto.jpg';
@@ -133,7 +133,7 @@ const Servicos = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://wa.me/5571997217825?text=Olá! Gostaria de solicitar um orçamento. Quero o desconto de 20%!"
+                href="https://wa.me/5571996904202?text=Olá! Gostaria de solicitar um orçamento. Quero o desconto de 20%!"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
@@ -186,7 +186,7 @@ const Servicos = () => {
                   </div>
 
                   <a
-                    href={`https://wa.me/5571997217825?text=Olá! Gostaria de solicitar o serviço de ${service.title}. Quero o desconto de 20%!`}
+                    href={`https://wa.me/5571996904202?text=Olá! Gostaria de solicitar o serviço de ${service.title}. Quero o desconto de 20%!`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
@@ -265,7 +265,7 @@ const Servicos = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://wa.me/5571997217825?text=Olá! Preciso de atendimento emergencial. Quero o desconto de 20%!"
+                href="https://wa.me/5571996904202?text=Olá! Preciso de atendimento emergencial. Quero o desconto de 20%!"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
@@ -274,10 +274,10 @@ const Servicos = () => {
                 <span>WhatsApp - 20% Desconto</span>
               </a>
               <a
-                href="tel:71997217825"
+                href="tel:71996904202"
                 className="bg-white hover:bg-gray-100 text-orange-600 px-8 py-4 rounded-lg text-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
               >
-                <span>(71) 9 9721-7825</span>
+                <span>(71) 9 9690-4202</span>
               </a>
             </div>
           </div>
