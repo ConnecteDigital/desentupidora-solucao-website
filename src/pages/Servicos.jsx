@@ -133,13 +133,13 @@ const Servicos = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://api.whatsapp.com/send?phone=5571996904202?text=Olá! Gostaria de solicitar um orçamento. Quero o desconto de 20%!"
+                href="https://api.whatsapp.com/send?phone=5571996904202?text=Olá, Vim pelo site e Gostaria de um Orçamento !"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
               >
                 <MessageCircle className="w-5 h-5" />
-                <span>Solicitar Orçamento - 20% Desconto</span>
+                <span>Solicitar Orçamento</span>
               </a>
             </div>
           </div>
@@ -186,7 +186,7 @@ const Servicos = () => {
                   </div>
 
                   <a
-                    href={`https://wa.me/5571996904202?text=Olá! Gostaria de solicitar o serviço de ${service.title}. Quero o desconto de 20%!`}
+                    href={`https://wa.me/5571996904202?text=Olá, Vim pelo site e Gostaria de um Orçamento !`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
@@ -243,10 +243,10 @@ const Servicos = () => {
                 <MessageCircle className="w-8 h-8 text-orange-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                20% Desconto no WhatsApp
+                Solicite um Orçamento via WhatsApp
               </h3>
               <p className="text-gray-600">
-                Ganhe desconto especial ao solicitar nossos serviços através do WhatsApp.
+                Solicite nossos serviços através do WhatsApp.
               </p>
             </div>
           </div>
@@ -265,13 +265,13 @@ const Servicos = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://wa.me/5571996904202?text=Olá! Preciso de atendimento emergencial. Quero o desconto de 20%!"
+                href="https://wa.me/5571996904202?text=Olá, Vim pelo site e Gostaria de um Orçamento !"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
               >
                 <MessageCircle className="w-5 h-5" />
-                <span>WhatsApp - 20% Desconto</span>
+                <span>WhatsApp</span>
               </a>
               <a
                 href="tel:71996904202"

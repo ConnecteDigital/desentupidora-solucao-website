@@ -82,13 +82,13 @@ const Atendimento24h = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://api.whatsapp.com/send?phone=5571996904202&text=Olá! Preciso de atendimento emergencial 24h. Quero o desconto de 20%!"
+                href="https://api.whatsapp.com/send?phone=5571996904202&text=Olá, Vim pelo site e Gostaria de um Orçamento !"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
               >
                 <MessageCircle className="w-5 h-5" />
-                <span>WhatsApp Emergencial - 20% Desconto</span>
+                <span>WhatsApp Emergencial</span>
               </a>
               <a
                 href="tel:71996904202"
@@ -257,9 +257,9 @@ const Atendimento24h = () => {
               <div className="bg-white bg-opacity-10 p-6 rounded-lg">
                 <MessageCircle className="w-8 h-8 text-white mx-auto mb-3" />
                 <h3 className="text-xl font-semibold mb-2">WhatsApp</h3>
-                <p className="text-orange-100 mb-3">Ganhe 20% de desconto</p>
+                <p className="text-orange-100 mb-3">Atendimento via WhatsApp</p>
                 <a
-                  href="https://api.whatsapp.com/send?phone=5571996904202&text=Olá! Preciso de atendimento emergencial 24h. Quero o desconto de 20%!"
+                  href="https://api.whatsapp.com/send?phone=5571996904202&text=Olá, Vim pelo site e Gostaria de um Orçamento !"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-semibold inline-flex items-center space-x-2 transition-colors"

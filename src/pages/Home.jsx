@@ -118,8 +118,8 @@ const Home = () => {
     },
     {
       icon: <MessageCircle className="w-8 h-8 text-orange-600" />,
-      title: "20% Desconto no WhatsApp",
-      description: "Ganhe 20% de desconto ao solicitar nossos serviços através do WhatsApp. Economia garantida!"
+      title: "Atendimento via WhatsApp",
+      description: "Solicite nossos serviços através do WhatsApp."
     },
     {
       icon: <Users className="w-8 h-8 text-orange-600" />,
@@ -151,20 +151,20 @@ const Home = () => {
               Desentupidora <span className="text-orange-400">Solução</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-100">
-              Atendimento 24 horas • Chegamos em 20 minutos • 20% desconto no WhatsApp
+              Atendimento 24 horas • Chegamos em 20 minutos
             </p>
             <p className="text-lg mb-10 text-blue-200 max-w-2xl mx-auto">
               Especialistas em desentupimento e limpa fossa. Resolvemos seu problema com rapidez, qualidade e preço justo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://wa.me/5571996904202?text=Olá! Preciso de atendimento emergencial para desentupimento. Quero o desconto de 20%!"
+                href="https://wa.me/5571996904202?text=Olá, Vim pelo site e Gostaria de um Orçamento !"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
               >
                 <MessageCircle className="w-5 h-5" />
-                <span>WhatsApp - 20% Desconto</span>
+                <span>WhatsApp</span>
               </a>
               <a
                 href="tel:71996904202"
@@ -216,7 +216,7 @@ const Home = () => {
                     ))}
                   </ul>
                   <a
-                    href={`https://wa.me/5571996904202?text=Olá! Gostaria de solicitar o serviço de ${service.title}. Quero o desconto de 20%!`}
+                    href={`https://wa.me/5571996904202?text=Olá, Vim pelo site e Gostaria de um Orçamento !`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg flex items-center justify-center space-x-2 transition-colors"
@@ -436,13 +436,13 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://wa.me/5571997217825?text=Olá! Preciso de atendimento emergencial. Quero o desconto de 20%!"
+                href="https://wa.me/5571997217825?text=Olá, Vim pelo site e Gostaria de um Orçamento !"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
               >
                 <MessageCircle className="w-5 h-5" />
-                <span>WhatsApp - 20% Desconto</span>
+                <span>WhatsApp</span>
               </a>
               <a
                 href="tel:71996904202"
