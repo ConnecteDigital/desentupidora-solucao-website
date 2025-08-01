@@ -133,7 +133,7 @@ const Servicos = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://api.whatsapp.com/send?phone=5571996904202?text=Olá, Vim pelo site e Gostaria de um Orçamento !"
+                href="https://api.whatsapp.com/send?phone=5571996904202?text=Olá, Gostaria de um Atendimento agora !"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
@@ -186,7 +186,7 @@ const Servicos = () => {
                   </div>
 
                   <a
-                    href={`https://wa.me/5571996904202?text=Olá, Vim pelo site e Gostaria de um Orçamento !`}
+                    href={`https://wa.me/5571996904202?text=Olá, Gostaria de um Atendimento agora !`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
@@ -265,7 +265,7 @@ const Servicos = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://wa.me/5571996904202?text=Olá, Vim pelo site e Gostaria de um Orçamento !"
+                href="https://wa.me/5571996904202?text=Olá, Gostaria de um Atendimento agora !"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center justify-center space-x-2 transition-colors"

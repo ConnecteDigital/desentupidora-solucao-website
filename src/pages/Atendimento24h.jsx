@@ -82,7 +82,7 @@ const Atendimento24h = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://api.whatsapp.com/send?phone=5571996904202&text=Olá, Vim pelo site e Gostaria de um Orçamento !"
+                href="https://api.whatsapp.com/send?phone=5571996904202&text=Olá, Gostaria de um Atendimento agora !"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
@@ -259,7 +259,7 @@ const Atendimento24h = () => {
                 <h3 className="text-xl font-semibold mb-2">WhatsApp</h3>
                 <p className="text-orange-100 mb-3">Atendimento via WhatsApp</p>
                 <a
-                  href="https://api.whatsapp.com/send?phone=5571996904202&text=Olá, Vim pelo site e Gostaria de um Orçamento !"
+                  href="https://api.whatsapp.com/send?phone=5571996904202&text=Olá, Gostaria de um Atendimento agora !"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-semibold inline-flex items-center space-x-2 transition-colors"
