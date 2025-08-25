@@ -35,10 +35,10 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-3">
             <img 
               src={logoImg} 
-              alt="Desentupidora Solução" 
+              alt="Limpa Fossa Solução" 
               className="w-12 h-12 md:w-12 md:h-12 rounded-full bg-white p-1"
             />
-            <span className="font-bold text-lg md:text-xl text-white">Desentupidora Solução</span>
+            <span className="font-bold text-lg md:text-xl text-white">Limpa Fossa Solução</span>
           </Link>
 
           {/* Desktop Menu */}

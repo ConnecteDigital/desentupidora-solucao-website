@@ -2,21 +2,21 @@ import { MessageCircle, CheckCircle, Clock, Shield, Wrench } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 // Importando as imagens
-import desentupimentoPiaImg from '../assets/images/desentupimento-pia.webp';
-import desentupimentoVasoImg from '../assets/images/desentupimento-vaso.jpg';
-import limpaFossaImg from '../assets/images/limpa-fossa-new.png';
-import hidrojateamentoImg from "../assets/images/hidrojateamento-new.jpg";
-import limpezaCaixaGorduraImg from '../assets/images/limpeza-caixa-gordura.jpg';
-import desentupimentoEsgotoImg from '../assets/images/desentupimento-esgoto.jpg';
-import desentupimentoRaloImg from '../assets/images/desentupimento-ralo-new.jpg';
-import desentupimentoCanosImg from '../assets/images/desentupimento-canos.jpg';
+import limpaFossa1Img from '../assets/images/limpa-fossa-1.png';
+import limpaFossa2Img from '../assets/images/limpa-fossa-2.png';
+import limpaFossa3Img from '../assets/images/limpa-fossa-3.png';
+import limpaFossa4Img from '../assets/images/limpa-fossa-4.png';
+import limpaFossa5Img from '../assets/images/limpa-fossa-5.png';
+import limpaFossa6Img from '../assets/images/limpa-fossa-6.png';
+import limpaFossa7Img from '../assets/images/limpa-fossa-7.png';
+import limpaFossa8Img from '../assets/images/limpa-fossa-8.png';
 
 const Servicos = () => {
   const services = [
     {
-      title: "Desentupimento de Pias",
-      description: "Desentupimento profissional de pias de cozinha e banheiro com equipamentos especializados. Removemos gordura, restos de comida e outros resíduos sem quebras desnecessárias.",
-      image: desentupimentoPiaImg,
+      title: "Limpeza de Pias",
+      description: "Limpeza profissional de pias de cozinha e banheiro com equipamentos especializados. Removemos gordura, restos de comida e outros resíduos sem quebras desnecessárias.",
+      image: limpaFossa1Img,
       features: [
         "Sem quebra de pisos ou azulejos",
         "Equipamentos modernos e eficientes", 
@@ -27,9 +27,9 @@ const Servicos = () => {
       details: "Utilizamos equipamentos de última geração para desentupir pias de forma rápida e eficiente. Nossa equipe especializada identifica a causa do entupimento e aplica a técnica mais adequada para cada situação."
     },
     {
-      title: "Desentupimento de Vasos Sanitários",
-      description: "Desentupimento especializado de vasos sanitários com total higiene e segurança. Resolvemos entupimentos simples e complexos com equipamentos apropriados.",
-      image: desentupimentoVasoImg,
+      title: "Limpeza de Vasos Sanitários",
+      description: "Limpeza especializada de vasos sanitários com total higiene e segurança. Resolvemos entupimentos simples e complexos com equipamentos apropriados.",
+      image: limpaFossa2Img,
       features: [
         "Higiene total durante o serviço",
         "Equipamentos sanitários específicos",
@@ -40,9 +40,9 @@ const Servicos = () => {
       details: "Nossos profissionais são treinados para lidar com entupimentos de vasos sanitários mantendo os mais altos padrões de higiene e segurança."
     },
     {
-      title: "Desentupimento de Ralos",
-      description: "Limpeza e desentupimento de ralos de banheiro, cozinha e área de serviço. Removemos cabelos, sabão e detritos acumulados com máxima eficiência.",
-      image: desentupimentoRaloImg,
+      title: "Limpeza de Ralos",
+      description: "Limpeza de ralos de banheiro, cozinha e área de serviço. Removemos cabelos, sabão e detritos acumulados com máxima eficiência.",
+      image: limpaFossa3Img,
       features: [
         "Remoção de cabelos e detritos",
         "Prevenção de maus odores",
@@ -53,9 +53,9 @@ const Servicos = () => {
       details: "Especializados na limpeza de ralos entupidos por cabelos, sabão e outros resíduos. Utilizamos técnicas específicas para cada tipo de ralo."
     },
     {
-      title: "Desentupimento de Canos",
-      description: "Desobstrução completa de tubulações e canos com hidrojateamento de alta pressão. Removemos incrustações, raízes e qualquer tipo de obstrução.",
-      image: desentupimentoCanosImg,
+      title: "Limpeza de Canos",
+      description: "Limpeza completa de tubulações e canos com hidrojateamento de alta pressão. Removemos incrustações, raízes e qualquer tipo de obstrução.",
+      image: limpaFossa4Img,
       features: [
         "Hidrojateamento de alta pressão",
         "Diagnóstico preciso com câmera",
@@ -68,7 +68,7 @@ const Servicos = () => {
     {
       title: "Limpeza de Fossa Séptica",
       description: "Limpeza e manutenção completa de fossas sépticas com caminhão limpa fossa equipado. Serviço completo com descarte ecológico adequado.",
-      image: limpaFossaImg,
+      image: limpaFossa5Img,
       features: [
         "Caminhão limpa fossa especializado",
         "Descarte ecológico adequado",
@@ -81,7 +81,7 @@ const Servicos = () => {
     {
       title: "Hidrojateamento de Alta Pressão",
       description: "Limpeza profunda de tubulações com jato de água de alta pressão. Remove incrustações, gordura e resíduos de forma eficiente e ecológica.",
-      image: hidrojateamentoImg,
+      image: limpaFossa6Img,
       features: [
         "Jato de água de alta pressão",
         "Ecologicamente correto",
@@ -94,7 +94,7 @@ const Servicos = () => {
     {
       title: "Limpeza de Caixa de Gordura",
       description: "Limpeza profissional de caixas de gordura residenciais e comerciais. Evita entupimentos e elimina maus odores na sua cozinha.",
-      image: limpezaCaixaGorduraImg,
+      image: limpaFossa7Img,
       features: [
         "Remoção completa da gordura",
         "Prevenção de entupimentos",
@@ -105,9 +105,9 @@ const Servicos = () => {
       details: "A limpeza regular da caixa de gordura é essencial para evitar entupimentos na rede de esgoto. Realizamos o serviço com equipamentos adequados."
     },
     {
-      title: "Desentupimento de Esgoto",
-      description: "Desobstrução de redes de esgoto predial e residencial. Utilizamos caminhões limpa fossa e equipamentos de hidrojateamento para soluções definitivas.",
-      image: desentupimentoEsgotoImg,
+      title: "Limpeza de Esgoto",
+      description: "Limpeza de redes de esgoto predial e residencial. Utilizamos caminhões limpa fossa e equipamentos de hidrojateamento para soluções definitivas.",
+      image: limpaFossa8Img,
       features: [
         "Equipamentos pesados especializados",
         "Solução definitiva para o problema",
