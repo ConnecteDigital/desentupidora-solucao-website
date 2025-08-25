@@ -12,11 +12,11 @@ const Blog = () => {
     {
       id: 1,
       slug: 'como-prevenir-entupimentos',
-      title: 'Como Prevenir Problemas na Sua Rede de Esgoto',
+      title: 'Como Prevenir Entupimentos na Sua Casa',
       excerpt: 'Descubra dicas simples e eficazes para evitar entupimentos em pias, ralos e vasos sanitários. Prevenção é sempre o melhor remédio!',
       content: 'Entupimentos são um dos problemas mais comuns e inconvenientes que podem ocorrer em qualquer residência. Felizmente, a maioria deles pode ser evitada com algumas práticas simples de prevenção...',
       image: blogPrevencaoImg,
-      author: 'Limpa Fossa Solução',
+      author: 'Desentupidora Solução',
       date: '15 de Janeiro, 2025',
       readTime: '5 min de leitura',
       category: 'Prevenção',
@@ -29,7 +29,7 @@ const Blog = () => {
       excerpt: 'Saiba identificar os sinais de que sua fossa precisa de limpeza e entenda a importância da manutenção regular para evitar problemas.',
       content: 'A fossa séptica é um sistema fundamental para o tratamento de esgoto em residências que não possuem acesso à rede pública de coleta...',
       image: blogFossaImg,
-      author: 'Limpa Fossa Solução',
+      author: 'Desentupidora Solução',
       date: '10 de Janeiro, 2025',
       readTime: '7 min de leitura',
       category: 'Manutenção',
@@ -42,7 +42,7 @@ const Blog = () => {
       excerpt: 'Aprenda como manter sua caixa de gordura funcionando corretamente e evite entupimentos e maus odores na sua cozinha.',
       content: 'A caixa de gordura é um componente essencial do sistema hidráulico de qualquer cozinha, seja residencial ou comercial...',
       image: blogCaixaGorduraImg,
-      author: 'Limpa Fossa Solução',
+      author: 'Desentupidora Solução',
       date: '5 de Janeiro, 2025',
       readTime: '6 min de leitura',
       category: 'Manutenção',
@@ -59,7 +59,7 @@ const Blog = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Blog da Limpa Fossa Solução
+              Blog da Desentupidora Solução
             </h1>
             <p className="text-xl mb-8 text-blue-100">
               Dicas, informações e guias para manter suas tubulações sempre funcionando

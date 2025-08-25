@@ -4,14 +4,14 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 
 // Importando as imagens
-import limpaFossa1Img from '../assets/images/limpa-fossa-1.png';
-import limpaFossa2Img from '../assets/images/limpa-fossa-2.png';
-import limpaFossa3Img from '../assets/images/limpa-fossa-3.png';
-import limpaFossa4Img from '../assets/images/limpa-fossa-4.png';
-import limpaFossa5Img from '../assets/images/limpa-fossa-5.png';
-import limpaFossa6Img from '../assets/images/limpa-fossa-6.png';
-import limpaFossa7Img from '../assets/images/limpa-fossa-7.png';
-import limpaFossa8Img from '../assets/images/limpa-fossa-8.png';
+import desentupimentoPiaImg from '../assets/images/desentupimento-pia.webp';
+import desentupimentoVasoImg from '../assets/images/desentupimento-vaso.jpg';
+import limpaFossaImg from "../assets/images/limpa-fossa-new.png";
+import hidrojateamentoImg from "../assets/images/hidrojateamento-home-v2.jpeg";
+import limpezaCaixaGorduraImg from '../assets/images/limpeza-caixa-gordura.jpg';
+import desentupimentoEsgotoImg from '../assets/images/desentupimento-esgoto.jpg';
+import desentupimentoRaloImg from '../assets/images/desentupimento-ralo-home-v2.jpeg';
+import desentupimentoCanosImg from '../assets/images/desentupimento-canos.jpg';
 import heroBackground from '../assets/images/hero-background-new.png';
 
 // Importando as imagens do blog
@@ -22,51 +22,51 @@ import blogCaixaGorduraImg from "../assets/images/blog-caixa-gordura-new.jpg";
 const Home = () => {
   const services = [
     {
-      title: "Limpeza de Pias",
-      description: "Limpeza profissional de pias de cozinha e banheiro. Utilizamos equipamentos especializados para remover gordura, restos de comida e outros resíduos.",
-      image: limpaFossa1Img,
+      title: "Desentupimento de Pias",
+      description: "Desentupimento profissional de pias de cozinha e banheiro. Utilizamos equipamentos especializados para remover gordura, restos de comida e outros resíduos.",
+      image: desentupimentoPiaImg,
       features: ["Sem quebra", "Chegamos em 20 minutos", "Equipamentos modernos"]
     },
     {
-      title: "Limpeza de Vasos Sanitários", 
-      description: "Limpeza especializada de vasos sanitários com equipamentos apropriados. Resolvemos entupimentos simples e complexos com higiene total.",
-      image: limpaFossa2Img,
+      title: "Desentupimento de Vasos Sanitários", 
+      description: "Desentupimento especializado de vasos sanitários com equipamentos apropriados. Resolvemos entupimentos simples e complexos com higiene total.",
+      image: desentupimentoVasoImg,
       features: ["Higiene total", "Equipamentos sanitários", "Resultado imediato"]
     },
     {
-      title: "Limpeza de Ralos",
-      description: "Limpeza de ralos de banheiro, cozinha e área de serviço. Removemos cabelos, sabão e detritos acumulados com eficiência.",
-      image: limpaFossa3Img,
+      title: "Desentupimento de Ralos",
+      description: "Limpeza e desentupimento de ralos de banheiro, cozinha e área de serviço. Removemos cabelos, sabão e detritos acumulados com eficiência.",
+      image: desentupimentoRaloImg,
       features: ["Atendimento rápido", "Prevenção de odores", "Serviço duradouro"]
     },
     {
-      title: "Limpeza de Canos",
-      description: "Limpeza completa de tubulações com hidrojateamento de alta pressão. Removemos incrustações, raízes e qualquer tipo de entupimento.",
-      image: limpaFossa4Img,
+      title: "Desentupimento de Canos",
+      description: "Desobstrução completa de tubulações com hidrojateamento de alta pressão. Removemos incrustações, raízes e qualquer tipo de entupimento.",
+      image: desentupimentoCanosImg,
       features: ["Diagnóstico preciso", "Técnicas avançadas", "Limpeza completa"]
     },
     {
       title: "Limpeza de Fossa Séptica",
       description: "Limpeza e manutenção de fossas sépticas com caminhão limpa fossa equipado. Serviço completo com descarte ecológico adequado.",
-      image: limpaFossa5Img,
+      image: limpaFossaImg,
       features: ["Caminhão especializado", "Descarte ecológico", "Manutenção preventiva"]
     },
     {
       title: "Hidrojateamento de Alta Pressão",
       description: "Limpeza de tubulações com jato de água de alta pressão. Remove incrustações, gordura e resíduos de forma eficiente e ecológica.",
-      image: limpaFossa6Img,
+      image: hidrojateamentoImg,
       features: ["Alta pressão", "Ecologicamente correto", "Limpeza profunda"]
     },
     {
       title: "Limpeza de Caixa de Gordura",
       description: "Limpeza profissional de caixas de gordura residenciais e comerciais. Evita entupimentos e maus odores na sua cozinha.",
-      image: limpaFossa7Img,
+      image: limpezaCaixaGorduraImg,
       features: ["Atendimento rápido", "Prevenção de odores", "Serviço duradouro"]
     },
     {
-      title: "Limpeza de Esgoto",
-      description: "Limpeza de redes de esgoto predial e residencial. Utilizamos caminhões limpa fossa e equipamentos de hidrojateamento.",
-      image: limpaFossa8Img,
+      title: "Desentupimento de Esgoto",
+      description: "Desobstrução de redes de esgoto predial e residencial. Utilizamos caminhões limpa fossa e equipamentos de hidrojateamento.",
+      image: desentupimentoEsgotoImg,
       features: ["Equipamentos pesados", "Solução definitiva", "Atendimento 24h"]
     }
   ];
@@ -106,7 +106,7 @@ const Home = () => {
       name: "Roberto Mendes",
       rating: 5,
       comment: "Tive um problema sério de esgoto e eles resolveram com equipamentos modernos. Não sujaram nada e o preço foi justo.",
-      service: "Limpeza de Esgoto"
+      service: "Desentupimento de Esgoto"
     }
   ];
 
@@ -148,13 +148,13 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Limpa Fossa Solução
+              Desentupidora <span className="text-orange-400">Solução</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-100">
               Atendimento 24 horas • Chegamos em 20 minutos
             </p>
             <p className="text-lg mb-10 text-blue-200 max-w-2xl mx-auto">
-              Especialistas em limpa fossa. Resolvemos seu problema com rapidez, qualidade e preço justo.
+              Especialistas em desentupimento e limpa fossa. Resolvemos seu problema com rapidez, qualidade e preço justo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -236,7 +236,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Por que escolher a Limpa Fossa Solução?
+              Por que escolher a Desentupidora Solução?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Somos referência em qualidade, rapidez e confiabilidade
@@ -270,7 +270,7 @@ const Home = () => {
               Atendimento 24 Horas
             </h2>
             <p className="text-xl mb-8 text-orange-100">
-              Problemas de fossa não escolhem hora para acontecer. Por isso, estamos disponíveis 24 horas por dia, 7 dias por semana, incluindo feriados.
+              Problemas de entupimento não escolhem hora para acontecer. Por isso, estamos disponíveis 24 horas por dia, 7 dias por semana, incluindo feriados.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               <div className="text-center">

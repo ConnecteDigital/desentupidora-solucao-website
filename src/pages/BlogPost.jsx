@@ -14,7 +14,7 @@ const BlogPost = () => {
     'como-prevenir-entupimentos': {
       title: 'Como Prevenir Entupimentos na Sua Casa',
       image: blogPrevencaoImg,
-      author: 'Limpa Fossa Solução',
+      author: 'Desentupidora Solução',
       date: '15 de Janeiro, 2025',
       readTime: '5 min de leitura',
       category: 'Prevenção',
@@ -81,7 +81,7 @@ const BlogPost = () => {
     'quando-limpar-fossa-septica': {
       title: 'Quando Fazer a Limpeza da Fossa Séptica',
       image: blogFossaImg,
-      author: 'Limpa Fossa Solução',
+      author: 'Desentupidora Solução',
       date: '10 de Janeiro, 2025',
       readTime: '7 min de leitura',
       category: 'Manutenção',
@@ -137,7 +137,7 @@ const BlogPost = () => {
     'cuidados-caixa-gordura': {
       title: 'Cuidados com a Caixa de Gordura',
       image: blogCaixaGorduraImg,
-      author: 'Limpa Fossa Solução',
+      author: 'Desentupidora Solução',
       date: '5 de Janeiro, 2025',
       readTime: '6 min de leitura',
       category: 'Manutenção',
@@ -299,7 +299,7 @@ const BlogPost = () => {
                     Precisa de Ajuda Profissional?
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    Se mesmo seguindo essas dicas você está enfrentando problemas, a Limpa Fossa Solução está aqui para ajudar! Nossa equipe especializada oferece atendimento 24 horas com equipamentos modernos e técnicas eficazes.
+                    Se mesmo seguindo essas dicas você está enfrentando problemas, a Desentupidora Solução está aqui para ajudar! Nossa equipe especializada oferece atendimento 24 horas com equipamentos modernos e técnicas eficazes.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a
