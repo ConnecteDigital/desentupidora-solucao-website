@@ -74,7 +74,12 @@ const Footer = () => {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {cidades.map((cidade) => (
               <div key={cidade.slug}>
-                <p className="text-sm font-semibold text-orange-300 mb-2">{cidade.nome}</p>
+                <Link
+                  to={`/${cidade.rota}`}
+                  className="block text-sm font-semibold text-orange-300 mb-2 hover:text-orange-200 transition-colors"
+                >
+                  {cidade.nome}
+                </Link>
                 <ul className="flex flex-wrap gap-x-3 gap-y-1 text-xs text-blue-200">
                   {bairros
                     .filter((b) => b.cidadeSlug === cidade.slug)

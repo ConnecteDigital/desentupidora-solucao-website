@@ -39,11 +39,20 @@ const cidadesBrutas = [
   },
 ];
 
-export const cidades = cidadesBrutas.map((cidade) => ({
-  nome: cidade.nome,
-  slug: slugify(cidade.nome),
-  bairros: cidade.bairros,
-}));
+// cidades: dados para as páginas "Desentupidora em {Cidade}" (rota) e para
+// agrupar/filtrar bairros (slug, sem prefixo de rota).
+export const cidades = cidadesBrutas.map((cidade) => {
+  const slug = slugify(cidade.nome);
+  return {
+    nome: cidade.nome,
+    slug,
+    rota: `desentupidora-${slug}`,
+    bairros: cidade.bairros,
+    metaTitle: `Desentupidora em ${cidade.nome} | 24h | Desentupidora Solução`,
+    metaDescription: `Desentupidora em ${cidade.nome} 24 horas. Desentupimento de pia, vaso, ralo, esgoto, caixa de gordura e limpa fossa em todos os bairros de ${cidade.nome}. Chegamos em 20 minutos. Orçamento grátis!`,
+    heroText: `Precisa de desentupidora em ${cidade.nome}? A Desentupidora Solução atende toda a cidade 24 horas por dia, com equipe profissional, equipamentos modernos e garantia no serviço, chegando rápido em qualquer bairro de ${cidade.nome}.`,
+  };
+});
 
 export const bairros = cidadesBrutas.flatMap((cidade) => {
   const cidadeSlug = slugify(cidade.nome);

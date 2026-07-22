@@ -11,8 +11,9 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import BairroPage from "./pages/BairroPage";
 import ServicoPage from "./pages/ServicoPage";
+import CidadePage from "./pages/CidadePage";
 import NotFound from "./pages/NotFound";
-import { bairros } from "./data/bairros";
+import { bairros, cidades } from "./data/bairros";
 import { servicos } from "./data/servicos";
 import './App.css';
 
@@ -29,6 +30,9 @@ const App = () => (
           <Route path="/contato" element={<Contato />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          {cidades.map((cidade) => (
+            <Route key={cidade.rota} path={`/${cidade.rota}`} element={<CidadePage slug={cidade.rota} />} />
+          ))}
           {bairros.map((bairro) => (
             <Route key={bairro.slug} path={`/${bairro.slug}`} element={<BairroPage slug={bairro.slug} />} />
           ))}

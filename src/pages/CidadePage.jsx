@@ -4,42 +4,34 @@ import { Phone, MessageCircle, MapPin, Check, ArrowLeft } from 'lucide-react';
 import DiferenciaisSeo from '@/components/seo/DiferenciaisSeo';
 import DepoimentosSeo from '@/components/seo/DepoimentosSeo';
 import FaqSeo from '@/components/seo/FaqSeo';
-import { bairros, cidades } from '@/data/bairros';
+import { cidades, bairros } from '@/data/bairros';
 import { servicos } from '@/data/servicos';
 import { NOME_EMPRESA, TELEFONE_DISPLAY, TELEFONE_LINK, linkWhatsapp } from '@/data/negocio';
 
-const BairroPage = ({ slug: slugProp }) => {
+const CidadePage = ({ slug: slugProp }) => {
   const params = useParams();
-  const slug = slugProp ?? params.slug;
-  const bairro = bairros.find((b) => b.slug === slug);
+  const rota = slugProp ?? params.slug;
+  const cidade = cidades.find((c) => c.rota === rota);
 
-  if (!bairro) return <Navigate to="/" replace />;
+  if (!cidade) return <Navigate to="/" replace />;
 
-  const cidade = cidades.find((c) => c.slug === bairro.cidadeSlug);
-  const outrosDoMesmoBairro = bairros.filter(
-    (b) => b.cidadeSlug === bairro.cidadeSlug && b.slug !== bairro.slug
-  );
-  const bairrosProximos =
-    outrosDoMesmoBairro.length > 0
-      ? [outrosDoMesmoBairro[0], outrosDoMesmoBairro[1 % outrosDoMesmoBairro.length], outrosDoMesmoBairro[2 % outrosDoMesmoBairro.length]].filter(
-          (b, i, arr) => b && arr.findIndex((x) => x.slug === b.slug) === i
-        )
-      : [];
+  const bairrosDaCidade = bairros.filter((b) => b.cidadeSlug === cidade.slug);
+  const outrasCidades = cidades.filter((c) => c.slug !== cidade.slug);
 
-  const url = `https://www.desentupidorasolucao.com.br/${bairro.slug}`;
-  const mensagemWhatsapp = `Olá, vim pelo site e preciso de atendimento no ${bairro.nome}, ${bairro.cidadeNome}!`;
+  const url = `https://www.desentupidorasolucao.com.br/${cidade.rota}`;
+  const mensagemWhatsapp = `Olá, vim pelo site e preciso de atendimento em ${cidade.nome}!`;
 
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    name: `${NOME_EMPRESA} — ${bairro.nome}, ${bairro.cidadeNome}`,
+    name: `${NOME_EMPRESA} — ${cidade.nome}`,
     url,
     telephone: '+5571996904202',
     priceRange: '$$',
-    areaServed: `${bairro.nome}, ${bairro.cidadeNome}`,
+    areaServed: bairrosDaCidade.map((b) => b.nome),
     address: {
       '@type': 'PostalAddress',
-      addressLocality: bairro.cidadeNome,
+      addressLocality: cidade.nome,
       addressRegion: 'BA',
       addressCountry: 'BR',
     },
@@ -54,8 +46,8 @@ const BairroPage = ({ slug: slugProp }) => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Helmet>
-        <title>{bairro.metaTitle}</title>
-        <meta name="description" content={bairro.metaDescription} />
+        <title>{cidade.metaTitle}</title>
+        <meta name="description" content={cidade.metaDescription} />
         <link rel="canonical" href={url} />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
@@ -65,12 +57,12 @@ const BairroPage = ({ slug: slugProp }) => {
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
             <span className="mb-4 inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium">
-              <MapPin className="h-3.5 w-3.5" /> Atendemos o {bairro.nome} e região
+              <MapPin className="h-3.5 w-3.5" /> Atendemos {cidade.nome} e região
             </span>
             <h1 className="mb-4 text-3xl font-bold md:text-5xl">
-              Desentupidora no {bairro.nome} — {bairro.cidadeNome} 24 Horas
+              Desentupidora em {cidade.nome} — 24 Horas
             </h1>
-            <p className="mx-auto mb-8 max-w-2xl text-lg text-blue-100">{bairro.heroText}</p>
+            <p className="mx-auto mb-8 max-w-2xl text-lg text-blue-100">{cidade.heroText}</p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <a
                 href={linkWhatsapp(mensagemWhatsapp)}
@@ -95,23 +87,20 @@ const BairroPage = ({ slug: slugProp }) => {
 
       <DiferenciaisSeo />
 
-      {/* Conteúdo local SEO */}
+      {/* Serviços */}
       <section className="py-16">
         <div className="container mx-auto max-w-3xl px-4">
           <h2 className="mb-4 text-2xl font-bold text-gray-800 md:text-3xl">
-            Serviços de Desentupimento no {bairro.nome}
+            Serviços de Desentupimento em {cidade.nome}
           </h2>
           <p className="mb-8 leading-relaxed text-gray-600">
-            A {NOME_EMPRESA} realiza todos os tipos de desentupimento no {bairro.nome}, em {bairro.cidadeNome}:
-            desentupimento de vaso sanitário, pia, ralo, canos, caixa de gordura, rede de esgoto e limpeza de fossa
-            séptica. Atendemos residências, comércios, condomínios e indústrias no {bairro.nome} com equipes
-            disponíveis 24 horas por dia para emergências.
+            A {NOME_EMPRESA} realiza todos os tipos de desentupimento em {cidade.nome}: desentupimento
+            de vaso sanitário, pia, ralo, canos, caixa de gordura, rede de esgoto e limpeza de fossa
+            séptica. Atendemos residências, comércios, condomínios e indústrias em toda a cidade, com
+            equipes disponíveis 24 horas por dia para emergências.
           </p>
 
-          <h3 className="mb-4 text-xl font-semibold text-gray-800">
-            Nossos Serviços no {bairro.nome}
-          </h3>
-          <ul className="mb-10 grid gap-2 sm:grid-cols-2">
+          <ul className="mb-4 grid gap-2 sm:grid-cols-2">
             {servicos.map((s) => (
               <li key={s.slug}>
                 <Link
@@ -119,69 +108,59 @@ const BairroPage = ({ slug: slugProp }) => {
                   className="flex items-center gap-2 text-sm text-gray-700 transition-colors hover:text-orange-600"
                 >
                   <Check className="h-4 w-4 shrink-0 text-orange-600" />
-                  {s.nome} no {bairro.nome}
+                  {s.nome} em {cidade.nome}
                 </Link>
               </li>
             ))}
           </ul>
+        </div>
+      </section>
 
-          <h3 className="mb-3 text-xl font-semibold text-gray-800">
-            Por que escolher a {NOME_EMPRESA} no {bairro.nome}?
-          </h3>
-          <p className="mb-8 leading-relaxed text-gray-600">
-            Com anos de experiência atendendo Salvador, Lauro de Freitas e Camaçari, oferecemos no {bairro.nome}:
-            atendimento 24 horas todos os dias, orçamento gratuito sem compromisso, técnicos qualificados,
-            equipamentos de alta pressão e garantia no serviço realizado.
+      {/* Bairros atendidos */}
+      <section className="border-t bg-white py-16">
+        <div className="container mx-auto max-w-3xl px-4">
+          <h2 className="mb-2 text-2xl font-bold text-gray-800 md:text-3xl">
+            Bairros Atendidos em {cidade.nome}
+          </h2>
+          <p className="mb-6 text-sm text-gray-600">
+            Clique no seu bairro para ver o atendimento local da {NOME_EMPRESA}.
           </p>
-
-          <a
-            href={linkWhatsapp(mensagemWhatsapp)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-8 py-3 font-semibold text-white transition-colors hover:bg-green-700"
-          >
-            <MessageCircle className="h-5 w-5" />
-            Solicitar orçamento grátis no {bairro.nome}
-          </a>
+          <div className="flex flex-wrap gap-2">
+            {bairrosDaCidade.map((b) => (
+              <Link
+                key={b.slug}
+                to={`/${b.slug}`}
+                className="rounded-full border bg-gray-50 px-3 py-1.5 text-sm text-gray-700 transition-colors hover:border-orange-300 hover:bg-orange-50 hover:text-orange-700"
+              >
+                {b.nome}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
       <DepoimentosSeo />
-      <FaqSeo contexto={`${bairro.nome}, ${bairro.cidadeNome}`} />
+      <FaqSeo contexto={cidade.nome} />
 
-      {/* Bairros próximos */}
+      {/* Outras cidades */}
       <section className="border-t bg-white py-12">
         <div className="container mx-auto max-w-3xl px-4">
-          <h2 className="mb-4 text-lg font-semibold text-gray-800">
-            Outros Bairros que Atendemos em {bairro.cidadeNome}
-          </h2>
-          {bairrosProximos.length > 0 && (
-            <div className="mb-6 grid gap-3 sm:grid-cols-3">
-              {bairrosProximos.map((b) => (
-                <Link
-                  key={b.slug}
-                  to={`/${b.slug}`}
-                  className="rounded-lg border bg-gray-50 p-3 text-sm font-medium text-orange-700 transition-colors hover:bg-orange-50"
-                >
-                  Desentupidora no {b.nome}
-                </Link>
-              ))}
-            </div>
-          )}
-          <div className="flex flex-wrap items-center gap-4">
-            {cidade && (
+          <h2 className="mb-4 text-lg font-semibold text-gray-800">Outras Cidades que Atendemos</h2>
+          <div className="mb-6 grid gap-3 sm:grid-cols-2">
+            {outrasCidades.map((c) => (
               <Link
-                to={`/${cidade.rota}`}
-                className="text-xs font-medium text-orange-600 hover:text-orange-700"
+                key={c.slug}
+                to={`/${c.rota}`}
+                className="rounded-lg border bg-gray-50 p-3 text-sm font-medium text-orange-700 transition-colors hover:bg-orange-50"
               >
-                Ver todos os bairros de {cidade.nome} →
+                Desentupidora em {c.nome}
               </Link>
-            )}
-            <Link to="/" className="inline-flex items-center gap-1.5 text-xs text-gray-500 hover:text-orange-600">
-              <ArrowLeft className="h-3.5 w-3.5" />
-              Voltar para página inicial
-            </Link>
+            ))}
           </div>
+          <Link to="/" className="inline-flex items-center gap-1.5 text-xs text-gray-500 hover:text-orange-600">
+            <ArrowLeft className="h-3.5 w-3.5" />
+            Voltar para página inicial
+          </Link>
         </div>
       </section>
 
@@ -190,7 +169,7 @@ const BairroPage = ({ slug: slugProp }) => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="mb-4 text-3xl font-bold md:text-4xl">Precisa de Atendimento Emergencial?</h2>
           <p className="mb-8 text-xl text-orange-100">
-            Entre em contato agora mesmo! Atendemos 24 horas no {bairro.nome} e toda a região.
+            Entre em contato agora mesmo! Atendemos 24 horas em {cidade.nome} e toda a região.
           </p>
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
             <a
@@ -216,4 +195,4 @@ const BairroPage = ({ slug: slugProp }) => {
   );
 };
 
-export default BairroPage;
+export default CidadePage;

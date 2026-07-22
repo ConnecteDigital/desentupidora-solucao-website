@@ -144,7 +144,11 @@ const ServicoPage = ({ slug: slugProp }) => {
           <div className="space-y-6">
             {cidades.map((cidade) => (
               <div key={cidade.slug}>
-                <h3 className="mb-2 text-sm font-semibold text-orange-700">{cidade.nome}</h3>
+                <h3 className="mb-2 text-sm font-semibold text-orange-700">
+                  <Link to={`/${cidade.rota}`} className="hover:underline">
+                    {cidade.nome}
+                  </Link>
+                </h3>
                 <div className="flex flex-wrap gap-2">
                   {bairros
                     .filter((b) => b.cidadeSlug === cidade.slug)
