@@ -16,7 +16,7 @@ const ServicoPage = ({ slug: slugProp }) => {
 
   const outrosServicos = servicos.filter((s) => s.slug !== slug);
   const mensagemWhatsapp = `Olá, vim pelo site e preciso do serviço de ${servico.nome}!`;
-  const url = `https://www.desentupidorasolucao.com.br/${servico.slug}`;
+  const url = `https://www.solucoesdesentupidora.com.br/${servico.slug}`;
 
   return (
     <div className="min-h-screen bg-gray-50">

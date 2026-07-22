@@ -18,7 +18,7 @@ const CidadePage = ({ slug: slugProp }) => {
   const bairrosDaCidade = bairros.filter((b) => b.cidadeSlug === cidade.slug);
   const outrasCidades = cidades.filter((c) => c.slug !== cidade.slug);
 
-  const url = `https://www.desentupidorasolucao.com.br/${cidade.rota}`;
+  const url = `https://www.solucoesdesentupidora.com.br/${cidade.rota}`;
   const mensagemWhatsapp = `Olá, vim pelo site e preciso de atendimento em ${cidade.nome}!`;
 
   const schema = {

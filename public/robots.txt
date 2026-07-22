@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.desentupidorasolucao.com.br/sitemap.xml
+Sitemap: https://www.solucoesdesentupidora.com.br/sitemap.xml

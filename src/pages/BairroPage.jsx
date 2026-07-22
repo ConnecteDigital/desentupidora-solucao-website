@@ -26,7 +26,7 @@ const BairroPage = ({ slug: slugProp }) => {
         )
       : [];
 
-  const url = `https://www.desentupidorasolucao.com.br/${bairro.slug}`;
+  const url = `https://www.solucoesdesentupidora.com.br/${bairro.slug}`;
   const mensagemWhatsapp = `Olá, vim pelo site e preciso de atendimento no ${bairro.nome}, ${bairro.cidadeNome}!`;
 
   const schema = {
