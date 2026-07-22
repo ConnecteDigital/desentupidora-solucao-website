@@ -1,6 +1,8 @@
 import { Phone, MessageCircle, MapPin, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import logoImg from '../assets/images/logo.png';
+import { servicos } from '../data/servicos';
+import { cidades, bairros } from '../data/bairros';
 
 const Footer = () => {
   return (
@@ -10,9 +12,9 @@ const Footer = () => {
           {/* Informações da Empresa */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <img 
-                src={logoImg} 
-                alt="Desentupidora Solução" 
+              <img
+                src={logoImg}
+                alt="Desentupidora Solução"
                 className="w-10 h-10 rounded-full bg-white p-1"
               />
               <h3 className="text-lg font-bold">Desentupidora Solução</h3>
@@ -34,12 +36,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Nossos Serviços</h4>
             <ul className="space-y-2 text-blue-200">
-              <li><Link to="/servicos" className="hover:text-white transition-colors">• Desentupimento de Pias</Link></li>
-              <li><Link to="/servicos" className="hover:text-white transition-colors">• Desentupimento de Vasos Sanitários</Link></li>
-              <li><Link to="/servicos" className="hover:text-white transition-colors">• Limpeza de Fossa Séptica</Link></li>
-              <li><Link to="/servicos" className="hover:text-white transition-colors">• Hidrojateamento de Alta Pressão</Link></li>
-              <li><Link to="/servicos" className="hover:text-white transition-colors">• Limpeza de Caixa de Gordura</Link></li>
-              <li><Link to="/servicos" className="hover:text-white transition-colors">• Desentupimento de Esgoto</Link></li>
+              {servicos.map((s) => (
+                <li key={s.slug}>
+                  <Link to={`/${s.slug}`} className="hover:text-white transition-colors">• {s.nome}</Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -64,6 +65,29 @@ const Footer = () => {
                 <span>WhatsApp: (71) 9 9721-7825</span>
               </a>
             </div>
+          </div>
+        </div>
+
+        {/* Bairros Atendidos */}
+        <div className="border-t border-blue-800 mt-8 pt-6">
+          <h4 className="text-lg font-semibold mb-4">Bairros Atendidos</h4>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {cidades.map((cidade) => (
+              <div key={cidade.slug}>
+                <p className="text-sm font-semibold text-orange-300 mb-2">{cidade.nome}</p>
+                <ul className="flex flex-wrap gap-x-3 gap-y-1 text-xs text-blue-200">
+                  {bairros
+                    .filter((b) => b.cidadeSlug === cidade.slug)
+                    .map((b) => (
+                      <li key={b.slug}>
+                        <Link to={`/${b.slug}`} className="hover:text-white transition-colors">
+                          {b.nome}
+                        </Link>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
 
